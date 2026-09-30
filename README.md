@@ -84,7 +84,7 @@ credit-risk-analytics/
 │   └── 0.1 star_schema_credit.png
 ├── docs/
 │   ├── data_model.md           # Formal data warehouse schema and data dictionary
-│   └── INTERVIEW_GUIDE.md      # Comprehensive technical interview preparation guide
+guide
 ├── LICENSE                     # Apache 2.0 Open Source License
 └── README.md
 ```
@@ -113,15 +113,7 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 🌐 1-Click Cloud Deployment (Streamlit Community Cloud)
 
-This repository is pre-configured for free cloud deployment:
-1. Fork or push this repository to your GitHub profile.
-2. Sign in to [share.streamlit.io](https://share.streamlit.io/) with your GitHub account.
-3. Click **"New app"**, select `dishajain260/credit-risk-analytics`, and set Main file path to `app.py`.
-4. Click **Deploy!** Your interactive app will be live with a shareable public URL.
-
----
 
 ## 📊 Dashboard & Platform Preview
 
@@ -147,12 +139,7 @@ The platform implements a **Star Schema** with one fact table and two dimension 
 
 ---
 
-## 🎓 Interview & Technical Documentation
 
-For technical discussions and job interviews (e.g., Banking Analytics, Software & BI Engineer):
-📄 [Read the Complete Interview Master Guide & Cheat Sheet](docs/INTERVIEW_GUIDE.md)
-
----
 
 ## 👤 Author
 
