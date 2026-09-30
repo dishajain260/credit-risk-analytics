@@ -341,13 +341,15 @@ with tab1:
 
     with col_b:
         st.markdown("#### 💼 Employment Duration vs Annual Income")
+        sample_df = df.sample(min(1500, len(df)), random_state=42).copy()
+        sample_df['loan_outcome'] = sample_df['loan_status'].map({0: 'Non-Default', 1: 'Default'})
         fig_scatter = px.scatter(
-            df.sample(min(1500, len(df))),
+            sample_df,
             x='person_emp_length',
             y='person_income',
-            color=df['loan_status'].map({0: 'Non-Default', 1: 'Default'}),
+            color='loan_outcome',
             color_discrete_map={'Non-Default': '#10B981', 'Default': '#EF4444'},
-            labels={'person_emp_length': 'Employment Length (Years)', 'person_income': 'Annual Income ($)'},
+            labels={'person_emp_length': 'Employment Length (Years)', 'person_income': 'Annual Income ($)', 'loan_outcome': 'Loan Outcome'},
             opacity=0.6,
             log_y=True
         )
